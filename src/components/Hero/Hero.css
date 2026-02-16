@@ -81,46 +81,43 @@ border: 2px solid white;
   background: linear-gradient(267deg, #DA7C25 , #B923E1);
   border-color: transparent;
 }
+
+
 @media(max-width: 768px){
 
   .hero{
-    gap: 25px;
+    padding: 40px 20px;
+    gap: 20px;
   }
 
   .hero img{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
 
   .hero h1{
-    font-size: 48px;
-    width: 80%;
-    text-align: center;
+    font-size: 34px;
+    width: 100%;
+    line-height: 42px;
   }
 
   .hero p{
-    font-size: 18px;
-    width: 80%;
-    text-align: center;
-    margin: 10px 0px;
-    line-height: 30px;
+    font-size: 15px;
+    width: 100%;
+    line-height: 24px;
   }
 
-  /* 👇 CHANGE THIS PART */
   .hero-action{
-    display: flex;
-    flex-direction: row;   /* Make side by side */
+    flex-direction: row;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;       /* Prevent overflow */
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .hero-connect,
   .hero-resume{
-    padding: 14px 28px;    /* Reduce size for mobile */
-    border-radius: 30px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 13px;
   }
 
 }

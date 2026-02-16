@@ -48,41 +48,45 @@
     display: none;
 }
 @media(max-width: 768px){
+
   .navbar{
-    margin: 20px 30px;
+    margin: 20px 20px;
+    width: calc(100% - 40px);
   }
+
+  .nav-logo{
+    width: 60px;
+  }
+
   .nav-connect{
-    display: none;
+    display: none; /* Hide button on mobile */
   }
+
   .nav-menu-open{
     display: block;
-    position: fixed;
-    right: 30px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
   }
-  .nav-mob-close{
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 290px;
-    width: 30px;
-  }
+
   .nav-menu{
     position: fixed;
     top: 0;
+    right: -100%;
+    width: 75%;              /* instead of 350px */
+    max-width: 300px;
+    height: 100vh;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 30px;
-    background-color: #1F0016;
-    width: 350px;
-    height: 100%;
-    z-index: 2;
-    transition: right 0.5s;
-    right: -350px;
+    padding: 80px 30px;
+    background: #111;
+    transition: 0.4s ease;
   }
+
   .nav-menu li{
-    font-size: 30px;
-    padding-left: 100px;
-    flex-direction: row;
-    gap: 20px;
+    font-size: 20px;
+    padding-left: 0;
   }
-  }
+
+}
