@@ -1,0 +1,126 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 35px;
+}
+.hero img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+
+  /* Stylish Border Ring */
+  padding: 8px;
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+
+  /* Smooth shadow */
+  box-shadow: 0 0 30px rgba(255, 0, 150, 0.4);
+
+  transition: 0.4s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(255, 0, 150, 0.7);
+}
+
+.hero h1{
+    font-size: 80px;
+   align-items: center;
+    width: 60%;
+    font-weight: 500;
+}
+.hero h1 span{
+    background: linear-gradient(267deg, #DA7C25 0.36% , #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.hero p{
+    font-size: 24px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    line-height:40px ;
+}
+.hero-action{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+
+}
+.hero-connect{
+  padding: 25px 45px;
+  border-radius: 50px;
+  cursor: pointer;
+   background: linear-gradient(267deg, #DA7C25 0.36% , #B923E1 102.06%);
+}
+.hero-resume{
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: linear-gradient(#0f0f0f,#0f0f0f) padding-box,
+              linear-gradient(135deg,#DA7C25,#B923E1) border-box;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.hero-connect:hover{
+border: 2px solid white;
+}
+.hero-resume:hover{
+  background: linear-gradient(267deg, #DA7C25 , #B923E1);
+  border-color: transparent;
+}
+@media(max-width: 768px){
+
+  .hero{
+    gap: 25px;
+  }
+
+  .hero img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero h1{
+    font-size: 48px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero p{
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    margin: 10px 0px;
+    line-height: 30px;
+  }
+
+  /* 👇 CHANGE THIS PART */
+  .hero-action{
+    display: flex;
+    flex-direction: row;   /* Make side by side */
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;       /* Prevent overflow */
+  }
+
+  .hero-connect,
+  .hero-resume{
+    padding: 14px 28px;    /* Reduce size for mobile */
+    border-radius: 30px;
+    font-size: 14px;
+  }
+
+}
